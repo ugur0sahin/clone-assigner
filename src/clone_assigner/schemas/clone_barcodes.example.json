@@ -1,0 +1,14 @@
+{
+  "c26.1": {
+    "barcode": "AU1_FLAG_VSVg",
+    "probes": ["Kozak-AU1", "FLAG-Linker", "VSVg-mCherry"]
+  },
+  "c35.1": {
+    "barcode": "AU1_S_V5",
+    "probes": ["Kozak-AU1", "linker-S", "S-linker_v2", "Linker-V5", "V5-mCherry"]
+  },
+  "c70.2": {
+    "barcode": "FLAG_Ollas_S",
+    "probes": ["FLAG-Linker", "Ollas-linker_v2", "S-mCherry", "linker-S"]
+  }
+}

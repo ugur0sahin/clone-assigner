@@ -1,0 +1,34 @@
+{
+    "c3.2": {
+      "barcode": "AU1_C_Ollas",
+      "probes": ["Kozak-AU1", "C-Linker", "Ollas-mCherry_V2"]
+    },
+    "c7.1": {
+      "barcode": "AU1_C_S",
+      "probes": ["Kozak-AU1", "C-Linker", "S-mCherry"]
+    },
+    "c18.2": {
+      "barcode": "AU1_C_VSVg",
+      "probes": ["Kozak-AU1", "C-Linker", "VSVg-mCherry"]
+    },
+    "c26.1": {
+      "barcode": "AU1_FLAG_VSVg",
+      "probes": ["Kozak-AU1", "FLAG-Linker", "VSVg-mCherry"]
+    },
+    "c35.1": {
+      "barcode": "AU1_S_V5",
+      "probes": ["Kozak-AU1", "linker-S", "S-linker_v2", "Linker-V5", "V5-mCherry"]
+    },
+    "c50.4": {
+      "barcode": "C_HA_NWS",
+      "probes": ["C-Linker", "link-HA-link", "NWS-mCherry"]
+    },
+    "c55.3": {
+      "barcode": "FLAG_HA_NWS",
+      "probes": ["FLAG-Linker", "link-HA-link", "NWS-mCherry"]
+    },
+    "c70.2": {
+      "barcode": "FLAG_Ollas_S",
+      "probes": ["FLAG-Linker", "Ollas-linker_v2", "S-mCherry", "linker-S"]
+    }
+  }

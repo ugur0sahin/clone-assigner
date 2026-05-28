@@ -1,0 +1,4 @@
+sample_name,path
+CTRL-1,/mnt/storage/raw_data/mouse_pancreas/Xenium/Xenium_2025_11/output-XETG00050__0065629__27962PPT2-27962PPT3__20251111__082454/cell_feature_matrix.h5
+TMXF-3,/mnt/storage/raw_data/mouse_pancreas/Xenium/Xenium_2025_11/output-XETG00050__0065629__27827PPT4__20251111__082454/cell_feature_matrix.h5
+MRTX-3,/mnt/storage/raw_data/mouse_pancreas/Xenium/Xenium_2025_11/output-XETG00050__0065629__27965PPT3__20251111__082454/cell_feature_matrix.h5

@@ -1,0 +1,5 @@
+status,n_cells,percent,sample,clone_json
+Assigned,75003,35.641884667474514,CTRL-1,clone_barcodes.json
+No Procode,69186,32.87761066362535,CTRL-1,clone_barcodes.json
+Ambiguous,45721,21.726899042459667,CTRL-1,clone_barcodes.json
+Multiple,20525,9.753605626440468,CTRL-1,clone_barcodes.json

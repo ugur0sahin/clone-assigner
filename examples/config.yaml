@@ -1,0 +1,18 @@
+input:
+  samples_csv: /home/ugur/PRJ-TumorCharOnly/clone-assigner/examples/samples.csv
+
+output:
+  out_dir: /home/ugur/PRJ-TumorCharOnly/clone-assigner/examples/outs
+
+assignment:
+  method: strict
+  expr_threshold: 0
+  min_top_tags: 2
+  clone_obs_col: clone_assignment_V2_test
+  procode_assignment_col: procode_assignment_V2
+  procode_status_col: procode_status_V2
+  clone_free_label: Clone-Free
+
+plots:
+  make_dotplot: true
+  figsize_dotplot: [15, 5]

@@ -1,0 +1,38 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv/
+venv/
+conda-env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Outputs
+outputs/
+clone_test_api/
+
+# Scanpy / AnnData
+*.h5ad
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+EOF

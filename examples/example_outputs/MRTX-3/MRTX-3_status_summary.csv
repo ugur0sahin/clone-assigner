@@ -1,0 +1,5 @@
+status,n_cells,percent,sample,clone_json
+No Procode,44057,59.462560060465364,MRTX-3,clone_barcodes.json
+Assigned,14641,19.760567942557902,MRTX-3,clone_barcodes.json
+Ambiguous,13067,17.636182043945364,MRTX-3,clone_barcodes.json
+Multiple,2327,3.1406899530313663,MRTX-3,clone_barcodes.json

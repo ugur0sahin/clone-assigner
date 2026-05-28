@@ -1,0 +1,13 @@
+status,n_cells,percent,sample,clone_json
+Assigned,75003,35.641884667474514,CTRL-1,clone_barcodes.json
+No Procode,69186,32.87761066362535,CTRL-1,clone_barcodes.json
+Ambiguous,45721,21.726899042459667,CTRL-1,clone_barcodes.json
+Multiple,20525,9.753605626440468,CTRL-1,clone_barcodes.json
+No Procode,42255,59.154160600291185,TMXF-3,clone_barcodes.json
+Assigned,13938,19.512263411356255,TMXF-3,clone_barcodes.json
+Ambiguous,12633,17.68535110314705,TMXF-3,clone_barcodes.json
+Multiple,2606,3.64822488520551,TMXF-3,clone_barcodes.json
+No Procode,44057,59.462560060465364,MRTX-3,clone_barcodes.json
+Assigned,14641,19.760567942557902,MRTX-3,clone_barcodes.json
+Ambiguous,13067,17.636182043945364,MRTX-3,clone_barcodes.json
+Multiple,2327,3.1406899530313663,MRTX-3,clone_barcodes.json
