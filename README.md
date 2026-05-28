@@ -1,5 +1,12 @@
 # clone-assigner
 
+<p align="center">
+
+  <img src="src/clone_assigner/schemas/1f569a0d8514563f99a2c7d3a50d2a43294b501e7745c23c31aa7d63210c08dd.png" alt="clone-assigner logo" width="650"/>
+
+</p>
+
+
 A flexible and reproducible clone assignment framework for ProCode/Xenium spatial transcriptomics datasets.
 
 `clone-assigner` assigns clone identities to single cells using combinatorial ProCode probe expression patterns from Xenium or related spatial transcriptomics technologies. The package supports both permissive and strict assignment strategies, multi-sample batch processing, configurable clone barcode schemas, and automated QC visualizations.
