@@ -7,9 +7,9 @@
 </p>
 
 
-A flexible and reproducible clone assignment framework for ProCode/Xenium spatial transcriptomics datasets.
+A flexible and reproducible clone assignment framework for ProCode/Combinatorial Barcoding single cell settings.
 
-`clone-assigner` assigns clone identities to single cells using combinatorial ProCode probe expression patterns from Xenium or related spatial transcriptomics technologies. The package supports both permissive and strict assignment strategies, multi-sample batch processing, configurable clone barcode schemas, and automated QC visualizations.
+`clone-assigner` assigns clone identities to single cells using combinatorial ProCodes. The package supports both permissive and strict assignment strategies, multi-sample batch processing, configurable clone barcode schemas, and automated QC visualizations.
 
 ---
 
@@ -38,6 +38,7 @@ This mode is highly conservative and useful when:
 - barcode bleed-through is minimal
 - specificity is critical
 - avoiding false positives is prioritized
+- return conflicted combinations as Multiple
 
 ### Permissive mode
 
@@ -53,10 +54,11 @@ This mode is useful when:
 ## Multi-sample processing
 
 Process:
-- dozens of Xenium samples
+- dozens of Single Cell samples
 - mixed `.h5ad` and `10x .h5`
 - independent clone barcode references per sample
 - shared global clone references
+- assign cells in conflict to clones by sorting and subsetting
 
 ---
 
@@ -139,7 +141,7 @@ The pipeline supports:
 | Format | Description |
 |---|---|
 | `.h5ad` | AnnData object |
-| `.h5` | 10x Xenium / Cell Ranger HDF5 |
+| `.h5` | 10x Single Cell / Cell Ranger HDF5 |
 
 Input type is automatically detected from file extension.
 
@@ -311,7 +313,7 @@ clone_assign_results/
 | Allows subset rescue | No | Yes |
 | Conservative | High | Moderate |
 | Handles dropout well | Moderate | Excellent |
-| Handles conflicts | Excellent | Moderate |
+| Handles conflicts | defines Mulitple | Assign |
 
 ---
 
@@ -321,33 +323,6 @@ clone_assign_results/
 |---|---|---|---|
 | c26.1 | X | X | X |
 | c55.3 |   | X |   |
-
----
-
-# Scientific Use Cases
-
-`clone-assigner` is designed for:
-- Xenium spatial transcriptomics
-- ProCode lineage tracing
-- barcode deconvolution
-- multiplex clone assignment
-- spatial clone ecology analysis
-- perturbation screening
-- tumor heterogeneity studies
-
----
-
-# Dependencies
-
-Core dependencies:
-- scanpy
-- anndata
-- pandas
-- numpy
-- scipy
-- seaborn
-- matplotlib
-- pyyaml
 
 ---
 
@@ -373,6 +348,6 @@ MIT License
 UGUR SAHIN
 
 GitHub:
-https://github.com/YOUR_USERNAME
+https://github.com/ugur0sahin
 
 Issues and pull requests are welcome.
