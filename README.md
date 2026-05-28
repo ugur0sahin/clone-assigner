@@ -54,30 +54,10 @@ This mode is useful when:
 ## Multi-sample processing
 
 Process:
-- dozens of Single Cell samples
-- mixed `.h5ad` and `10x .h5`
+- Multiple Single Cell samples
 - independent clone barcode references per sample
 - shared global clone references
 - assign cells in conflict to clones by sorting and subsetting
-
----
-
-## Rich outputs
-
-Automatically generates:
-- clone-assigned `.h5ad`
-- clone count tables
-- assignment summaries
-- clone–probe binary expectation matrices
-- dotplots of probe expression by clone
-
----
-
-## YAML-driven configuration
-
-All behavior is configurable through `config.yaml`.
-
-No code modifications required.
 
 ---
 
