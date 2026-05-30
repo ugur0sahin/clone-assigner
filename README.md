@@ -7,9 +7,9 @@
 </p>
 
 
-A flexible and reproducible clone assignment framework for ProCode/Combinatorial Barcoding single cell settings.
+A flexible and reproducible clone assignment framework based on Decision Trees for ProCode/Combinatorial Barcoding single cell settings.
 
-`clone-assigner` assigns clone identities to single cells using combinatorial ProCodes. The package supports both permissive and strict assignment strategies, multi-sample batch processing, configurable clone barcode schemas, and automated QC visualizations.
+`clone-assigner` assigns clone identities to single cells using combinatorial ProCodes. The package supports two approach for permissive and strict assignments, multi-sample batch processing, configurable clone barcode schemas, and automated QC visualizations.
 
 ---
 
@@ -22,9 +22,9 @@ Assign cells to clones based on predefined ProCode probe combinations.
 Supports:
 - exact barcode matching
 - subset-compatible matching
-- ambiguous barcode detection
+- ambiguous barcode detection and reason
 - conflicting barcode detection
-- clone-free / no-procode labeling
+- procode negative labeling
 
 ---
 
@@ -45,9 +45,9 @@ This mode is highly conservative and useful when:
 The algorithm searches for the best-supported compatible subset of probes.
 
 This mode is useful when:
-- probe dropout exists
+- segmentation is not well
 - signal sparsity is expected
-- partially observed barcodes are common
+- partially observed barcodes are common in many cells
 
 ---
 
@@ -55,7 +55,7 @@ This mode is useful when:
 
 Process:
 - Multiple Single Cell samples
-- independent clone barcode references per sample
+- independent clone barcode references per sample, if barcode composition already known
 - shared global clone references
 - assign cells in conflict to clones by sorting and subsetting
 
@@ -66,7 +66,7 @@ Process:
 ## Install from source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/clone-assigner.git
+git clone https://github.com/ugur0sahin/clone-assigner.git
 
 cd clone-assigner
 
@@ -234,20 +234,11 @@ clone-assigner \
 
 ---
 
-## Strict assignment
+## assignment approach
 
 ```yaml
 assignment:
-  method: strict
-```
-
----
-
-## Permissive assignment
-
-```yaml
-assignment:
-  method: permissive
+  method: strict # or permissive
 ```
 
 ---
@@ -281,7 +272,6 @@ clone_assign_results/
 | Ambiguous | compatible with multiple clone definitions |
 | Multiple | conflicting probe combination |
 | No Procode | no detected probe signal |
-| Clone-Free | cells not processed for assignment |
 
 ---
 
@@ -311,8 +301,7 @@ clone_assign_results/
 If you use this package in academic work, please cite:
 
 ```text
-clone-assigner: a framework for ProCode clone assignment
-from spatial transcriptomics datasets.
+clone-assigner: ...
 ```
 
 ---
@@ -325,7 +314,7 @@ MIT License
 
 # Contact
 
-UGUR SAHIN
+UGUR SAHIN | AG-Saur
 
 GitHub:
 https://github.com/ugur0sahin
